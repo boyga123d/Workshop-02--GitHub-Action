@@ -29,3 +29,13 @@ jobs:
       with: 
         name: demo-artifact
         path: WebApplication1/WebApplication1.sln
+    - name: Upload to Google Drive
+      uses: satackey/action-google-drive@v1
+        with:
+      skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
+      upload-from: WebApplication1/WebApplication1.sln
+      upload-to: /github/test
+
+    # For those who set up Google Drive API client ID and secret themselves
+    google-client-id: ${{ 350319605464-fu557ebujubhkt40mp134d5ov6nd31hq.apps.googleusercontent.com }}
+    google-client-secret: ${{ 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 }}
