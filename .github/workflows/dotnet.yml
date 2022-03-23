@@ -33,5 +33,5 @@ jobs:
       uses: Jodebu/upload-to-drive@master
       with:
           target: WebApplication1/WebApplication1.sln
-          credentials: secrets.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
+          credentials: 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
           folder: 12JBqw8qdWd7DkxgUroKaauYRyVq9iqGq
